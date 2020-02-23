@@ -60,6 +60,16 @@ class Brick
     price: 50
 }
 
+
+class BrickTemplate
+{
+  string title;
+  string description;
+  string image;
+  string createTime; // ISO date string
+  Map<BrickID, Brick> bricks;
+}
+
 ```
 
 
@@ -70,11 +80,11 @@ bitsWalls
     - { channelID }
       - pictures
         - { picture ID (uuid) } : { firestore url}
-      - tamplates
-        - { uuid }: { Map<brickID ,Brick> }
-        - { uuid }: { Map<brickID ,Brick> }
-        - { uuid }: { Map<brickID ,Brick> }
-      - bricks: Map<brickID ,Brick> 
+      - tamplates // Map<uuid, BrickTemplate>
+        - { uuid }: { BrickTemplate }
+        - { uuid }: { BrickTemplate }
+        - { uuid }: { BrickTemplate }
+      - launching: BrickTemplate 
 ```
 
 ### Firestore Data Structure
