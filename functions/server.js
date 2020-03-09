@@ -6,20 +6,13 @@ const config = require('./config.json')
 
 const app = express();
 
-if (config) {
-    admin.initializeApp({
-        credential: admin.credential.cert(config.credential),
-        databaseURL: config.databaseURL
-    });
-} else {
-    admin.initializeApp();
-}
+admin.initializeApp();
 
 // Automatically allow cross-origin requests
 app.use(cors({ origin: true }));
 app.use(bodyParser.json());
 
-app.post('/health', async(req, res) => {
+app.get('/health', async(req, res) => {
     res.json({ status: 'OK' });
 });
 
