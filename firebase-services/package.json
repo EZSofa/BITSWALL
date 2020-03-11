@@ -1,0 +1,21 @@
+{
+  "name": "bitswall-backend",
+  "version": "1.0.0",
+  "description": "- `cd functions`\r  - `npm run serve`",
+  "main": "index.js",
+  "scripts": {
+    "dev":"firebase emulators:start --only functions,database,hosting",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EZSofa/BITSWALL.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EZSofa/BITSWALL/issues"
+  },
+  "homepage": "https://github.com/EZSofa/BITSWALL#readme"
+}

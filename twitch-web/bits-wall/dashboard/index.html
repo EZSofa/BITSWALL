@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/css/header.css">
+  <link rel="stylesheet" type="text/css" href="/css/menu.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/js/menu.js"></script>
+</head>
+
+<body>
+
+<header>
+  <span id="menuButton" onclick="toggleNav()">&#9776;</span>
+  <div class="navbar">
+    <a href=""><img src="/img/brick-wall.svg"/></a>
+  </div>
+</header>
+
+<div id="menu" class="sidenav">
+  <span class="close" onclick="toggleNav()">&#9776;</span>
+  <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+  <a href="javascript:void(0)" id="bricks" onclick="clickMenu(id);"><img class="menuIcon" src="img/bricks.svg" />bricks</a>
+  <a href="javascript:void(0)" id="rewards" onclick="clickMenu(id);"><img class="menuIcon" src="img/gift.svg" />rewards</a>
+</div>
+
+<div id = "content" >
+  <div id = "bricks-wall">
+    <p>Nana is here</p>
+  </div>
+</div>
+
+     
+</body>
+</html> 
+
